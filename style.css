@@ -1,0 +1,107 @@
+nav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav ul li {
+    float: left;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: #111;
+  }
+
+  .landing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    padding: 0 2rem;
+    background-color: transparent;
+    flex-wrap: wrap;
+     text-align: center;
+    overflow: hidden;
+  }
+  
+  .container {
+    margin: 20px;
+    animation: moving 16s infinite; 
+
+  }
+  .container h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+
+  }
+  
+  .container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #444;
+  }
+  
+
+  
+  .image img {
+    width: 80%;
+    
+    overflow: hidden;
+    
+  }
+
+  body {
+    background-image: url('yoga.png');
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center;
+  }
+
+    @keyframes moving {
+    50% {transform: scale(1.1,1.1)}
+}
+
+
+  @keyframes changeColor {
+    0% {background-color: rgba(255, 255, 255, 0.622);}
+    50% {background-color: rgba(255, 255, 255, 0.396);}
+    100% {background-color:  rgba(255, 255, 255, 0.071)}
+  }
+
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.615);
+    backdrop-filter: blur(10px);
+    animation: changeColor 8s infinite alternate;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  }
